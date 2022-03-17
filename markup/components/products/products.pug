@@ -1,0 +1,110 @@
+mixin products(data)
+    section.products
+        .products__container.container
+            h2.products__title.title.title_reg <span>Мессенджеры</span> – самый эффективный канал коммуникаций с клиентами
+
+            ul.products__list
+
+                li.products__item.products__item_active.products__item_rating_5
+                    != pugHelpers.Icon.call(locals, {iconName: 'products-1-icon', className: 'products__item-icon'})
+                    .products__item-title Мессенджеры
+                    dl.products__specs
+                        .products__specs-item
+                            dt.products__specs-term Эффективность
+                            |<svg class="products__specs-rating" width="136" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5" rx="2.5" fill="currentColor"/><rect x="28" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="56" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="84" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="112" width="24" height="5" rx="2.5" fill="currentColor"/></svg>
+                            dd.products__specs-desc
+                                .products__rating-val <span>5</span> / 5
+
+                        .products__specs-item
+                            dt.products__specs-term Увидят (Open Rate)
+                            dd.products__specs-desc 90%
+
+                        .products__specs-item
+                            dt.products__specs-term Кликнут (Click Rate)
+                            dd.products__specs-desc 50%
+
+                li.products__item.products__item_rating_4
+                    != pugHelpers.Icon.call(locals, {iconName: 'products-2-icon', className: 'products__item-icon'})
+                    .products__item-title In app-push
+
+                    dl.products__specs
+                        .products__specs-item.products__specs-item_rating
+                            dt.products__specs-term Эффективность
+                            |<svg class="products__specs-rating" width="136" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5" rx="2.5" fill="currentColor"/><rect x="28" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="56" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="84" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="112" width="24" height="5" rx="2.5" fill="currentColor"/></svg>
+                            dd.products__specs-desc
+                                .products__rating-val <span>4</span> / 5
+
+                        .products__specs-item
+                            dt.products__specs-term Увидят (Open Rate)
+                            dd.products__specs-desc 50%
+
+                        .products__specs-item
+                            dt.products__specs-term Кликнут (Click Rate)
+                            dd.products__specs-desc 10%
+
+                li.products__item.products__item_rating_3
+                    != pugHelpers.Icon.call(locals, {iconName: 'products-3-icon', className: 'products__item-icon'})
+                    .products__item-title SMS-сообщения
+
+                    dl.products__specs
+                        .products__specs-item.products__specs-item_rating
+                            dt.products__specs-term Эффективность
+                            | <svg class="products__specs-rating" width="136" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5" rx="2.5" fill="currentColor"/><rect x="28" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="56" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="84" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="112" width="24" height="5" rx="2.5" fill="currentColor"/></svg>
+                            dd.products__specs-desc
+                                .products__rating-val <span>3</span> / 5
+
+                        .products__specs-item
+                            dt.products__specs-term Увидят (Open Rate)
+                            dd.products__specs-desc 90%
+
+                        .products__specs-item
+                            dt.products__specs-term Кликнут (Click Rate)
+                            dd.products__specs-desc 1%
+
+                li.products__item.products__item_rating_2
+                    != pugHelpers.Icon.call(locals, {iconName: 'products-4-icon', className: 'products__item-icon'})
+                    .products__item-title Email-рассылка
+
+                    dl.products__specs
+                        .products__specs-item.products__specs-item_rating
+                            dt.products__specs-term Эффективность
+                            |<svg class="products__specs-rating" width="136" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5" rx="2.5" fill="currentColor"/><rect x="28" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="56" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="84" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="112" width="24" height="5" rx="2.5" fill="currentColor"/></svg>
+                            dd.products__specs-desc
+                                .products__rating-val <span>2</span> / 5
+
+                        .products__specs-item
+                            dt.products__specs-term Увидят (Open Rate)
+                            dd.products__specs-desc 15%
+
+                        .products__specs-item
+                            dt.products__specs-term Кликнут (Click Rate)
+                            dd.products__specs-desc 5%
+
+                li.products__item.products__item_rating_1
+                    != pugHelpers.Icon.call(locals, {iconName: 'products-5-icon', className: 'products__item-icon'})
+                    .products__item-title Браузерный Push
+
+                    dl.products__specs
+                        .products__specs-item
+                            dt.products__specs-term Эффективность
+                            |<svg class="products__specs-rating" width="136" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="5" rx="2.5" fill="currentColor"/><rect x="28" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="56" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="84" width="24" height="5" rx="2.5" fill="currentColor"/><rect x="112" width="24" height="5" rx="2.5" fill="currentColor"/></svg>
+                            dd.products__specs-desc
+                                .products__rating-val <span>1</span> / 5
+
+                        .products__specs-item
+                            dt.products__specs-term Увидят (Open Rate)
+                            dd.products__specs-desc 30%
+
+                        .products__specs-item
+                            dt.products__specs-term Кликнут (Click Rate)
+                            dd.products__specs-desc 0,5%
+
+
+
+            .products__button-w
+                a.products__button.button(href="#") Обсудить проект
+
+
+        != pugHelpers.Icon.call(locals, {iconName: 'products-bg', className: 'products__bg'})
+
+        != pugHelpers.Icon.call(locals, {iconName: 'products-bg-2', className: 'products__bg products__bg_second'})

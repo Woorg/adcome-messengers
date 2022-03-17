@@ -1,0 +1,27 @@
+mixin header(data)
+    header.header&attributes(attributes)
+        .header__container.container
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav(nav.primaryListRu).header__nav.nav_primary
+
+            .header__controls
+                a.header__lang(href="/index-lang-eng.html") Eng
+                a.header__contact.button.button_stroke(href="#contact") Написать нам
+
+
+
+mixin header-en(data)
+    header.header&attributes(attributes)
+        .header__container.container
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav-en(nav.primaryListEn).header__nav.nav_primary
+
+            .header__controls
+                a.header__lang(href="/index.html") Ru
+                a.header__contact.button.button_stroke(href="#contact") Write to us

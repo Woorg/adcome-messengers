@@ -1,0 +1,38 @@
+mixin know(data)
+    section.know
+        .know__container.container
+            h2.know__title.title.title_reg Знаете ли <span>вы</span>
+            ul.know__list
+                li.know__item
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-1-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-1-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-1-icon@2x.png" width="103" height="100" )
+
+
+                    .know__item-title Популярность мессенджеров
+                    .know__item-text Мессенджеры находятся на первом месте среди востребованных функций смартфона
+
+
+                li.know__item
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-2-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-2-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-2-icon@2x.png" width="111" height="109" )
+
+                    .know__item-title Время в соц. сетях
+                    .know__item-text По данным ВЦИОМ более 25% граждан РФ проводят в соцсетях и мессенджерах более 1-2 часов в день
+
+
+                li.know__item
+
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-3-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-3-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-3-icon@2x.png" width="117" height="114" )
+
+                    .know__item-title Мессенджеры
+                    .know__item-text Согласно исследованиям компании Deloitte россияне устанавливают на свои смартфоны от 3 мессенджеров и более
+
+
+        != pugHelpers.Icon.call(locals, {iconName: 'know-bg', className: 'know__bg'})

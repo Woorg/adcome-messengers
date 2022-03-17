@@ -1,0 +1,21 @@
+mixin features(data)
+    section.features
+        .features__container.container
+            ul.features__list
+                li.features__item
+                    picture.features__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/features-1-img@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/features-1-img@2x.png")
+                        img.lazy.lazy(width="509" height="194" src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/features-1-img@2x.png")
+
+                    .features__item-title Каскадные рассылки
+                    .features__text Позволяют доставлять сообщения в каждый последующий мессенджер, после того как предыдущий не дал результата. Например, сначала пытаемся доставить через Telegram, не доставлен в Telegram - пробуем в WhatsApp и тд.
+
+                li.features__item
+                    picture.features__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/features-2-img@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/features-2-img@2x.png")
+                        img.lazy.lazy(width="228" height="228" src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/features-2-img@2x.png")
+
+                    .features__item-title Единый чат-центр
+                    .features__text Омниканальный чат-центр объеденяет работу со всеми мессенджерами в общей консоли для оператора.

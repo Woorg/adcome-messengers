@@ -1,0 +1,42 @@
+mixin how(data)
+    section.how
+        .how__container.container
+            h2.how__title.title.title_reg <span>Как</span> мы работаем?
+            ul.how__list
+                li.how__item
+                    .how__step 01
+                    .how__item-title Собираем базу
+                    .how__item-text Формы подписки, всплывающие окна, pop-up и тд
+
+                li.how__item
+                    .how__step 02
+                    .how__item-title Сегментируем базу подписчиков
+                    .how__item-text Увеличиваем продажи за счет индивидуальных и актуальных предложени
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-1-icon', className: 'how__icon'})
+                li.how__item
+                    .how__step 03
+                    .how__item-title Разрабатываем welcome - цепочки
+                    .how__item-text Знакомим подписчика с брендом и стимулируем первую покупку
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-2-icon', className: 'how__icon'})
+                li.how__item
+                    .how__step 04
+                    .how__item-title Знакомим подписчика с брендом и стимулируем первую покупку
+                    .how__item-text Уникальный дизайн повышает узнаваемость, доверие и количество транзакций
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-3-icon', className: 'how__icon'})
+                li.how__item
+                    .how__step 05
+                    .how__item-title Внедряем геймификацию и интерактивный контент
+                    .how__item-text Повышаем вовлечение подписчиков и стимулируем дополнительные продажи
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-4-icon', className: 'how__icon'})
+                li.how__item
+                    .how__step 06
+                    .how__item-title Создаем чат-ботов под необходимые функции
+                    .how__item-text Мотивируем пользователей активнее контактировать через мессенджеры
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-5-icon', className: 'how__icon'})
+                li.how__item
+                    .how__step 07
+                    .how__item-title Ведем отчетность
+                    .how__item-text Анализируем маркетинг и используем самые выгодные сценарии
+                    != pugHelpers.Icon.call(locals, {iconName: 'how-6-icon', className: 'how__icon'})
+
+            != pugHelpers.Icon.call(locals, {iconName: 'how-bg', className: 'how__bg'})

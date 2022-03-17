@@ -1,0 +1,123 @@
+.hero {
+    position: relative;
+    background: url('../img/general/hero-bg.webp') no-repeat;
+    background-size: 3287px 1455px;
+    background-position: 50% 100%;
+    overflow: hidden;
+
+    &__container {
+        padding-top: 554px;
+        padding-bottom: 60px;
+        text-align: center;
+        color: #222;
+        font-family: $sfpro;
+
+        @include mq($small) {
+            padding-top: 120px;
+            padding-bottom: 65px;
+        }
+
+        @include mq($medium) {
+            padding-top: 220px;
+            padding-bottom: 190px;
+        }
+    }
+
+    &__title,
+    &__text,
+    &__button {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 15px;
+
+        @include mq($small) {
+            margin-bottom: 10px;
+            // max-width: 474px;
+
+        }
+
+        @include mq($medium) {
+            // max-width: 734px;
+        }
+    }
+
+    &__text {
+        margin: auto;
+        max-width: 510px;
+        color: rgba(15, 20, 34, .6);
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.5;
+        @include mq($small) {
+            font-size: 14px;
+        }
+
+        @include mq($medium) {
+            // max-width: 380px;
+            @include font-size(16px);
+        }
+
+    }
+
+    &__button {
+        margin-top: 40px;
+        width: 100%;
+        @include mq($small) {
+            margin-top: 50px;
+            width: auto;
+        }
+
+        @include mq($medium) {
+        }
+
+    }
+
+    &__icons {
+        position: absolute;
+        left: 50%;
+        width: 1184px;
+        height: 454px;
+        transform: translateX(-50%);
+
+        @include mq($small) {
+            display: none;
+        }
+
+        @include mq($medium) {
+            top: 170px;
+            width: 1184px;
+            height: 454px;
+            display: block;
+        }
+
+    }
+
+    &__icons_tablet {
+        display: none;
+        @include mq($small) {
+            top: 80px;
+            width: 704px;
+            height: 300px;
+            display: flex;
+        }
+        @include mq($medium) {
+            display: none;
+        }
+    }
+
+    &__icons_mob {
+        top: 110px;
+        width: 346px;
+        height: 338px;
+        display: block;
+        @include mq($small) {
+            display: none;
+        }
+    }
+
+}
