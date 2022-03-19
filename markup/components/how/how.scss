@@ -20,9 +20,9 @@
     &__bg {
         position: absolute;
         bottom: -25px;
-        right: 120px;
-
+        right: 0;
         @include mq($small) {
+            right: 120px;
         }
 
         @include mq($medium) {
@@ -54,10 +54,19 @@
 
     &__item {
         position: relative;
-        margin-bottom: 45px;
-        padding-right: 280px;
-        padding-left: 107px;
+        margin-top: -5px;
+        padding-bottom: 45px;
+        padding-left: 35px;
+
+        overflow: hidden;
+        // display: flex;
+        // flex-direction: column;
         @include mq($small) {
+            margin-top: 9px;
+            padding-right: 280px;
+            padding-left: 107px;
+            display: block;
+            overflow: inherit;
         }
 
         @include mq($medium) {
@@ -194,16 +203,19 @@
     }
 
     &__step {
-        position: absolute;
-        top: 0;
-        left: 37px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         color: #3976f4;
         font-weight: bold;
-        font-size: 40px;
-        letter-spacing: -0.2px;
+        font-size: 30px;
+        letter-spacing: -0.15px;
         line-height: 1;
+
         @include mq($small) {
+            top: 0;
+            position: absolute;
+            left: 37px;
+            font-size: 40px;
+            letter-spacing: -0.2px;
 
         }
 

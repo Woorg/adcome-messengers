@@ -95,8 +95,8 @@
         }
 
         @include mq($medium) {
-            top: -48px;
-            left: -51px;
+            top: -38px;
+            left: -48px;
             width: 74px;
             height: 74px;
         }
@@ -191,8 +191,9 @@
         padding-bottom: 34px;
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
         @include mq($small) {
-
+            flex-wrap: nowrap;
         }
 
         @include mq($medium) {
@@ -203,7 +204,9 @@
 
     .request__entry,
     .request__form {
-        width: 50%;
+        @include mq($small) {
+            width: 50%;
+        }
     }
 
     .request__entry {

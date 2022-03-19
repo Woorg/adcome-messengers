@@ -84,7 +84,7 @@
 
 
     &__bottom {
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -116,13 +116,10 @@
     &__note {
         margin-top: 13px;
         margin-left: 0;
-        padding-right: 20px;
-        padding-left: 20px;
         color: #777;
         font-size: 9px;
         font-weight: normal;
         line-height: 1.4;
-        text-align: center;
         @include mq($small) {
             margin-top: 0;
             margin-left: 0;
