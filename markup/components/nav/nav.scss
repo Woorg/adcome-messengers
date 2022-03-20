@@ -82,6 +82,12 @@
 
     }
 
+    &__item_active {
+        .nav__link {
+            color: #000;
+        }
+    }
+
     &__link {
         padding-top: 0;
         padding-right: 0;
@@ -107,7 +113,7 @@
         }
 
         &:hover {
-            color: darken(#777, 10);
+            color: #000;
         }
 
     }
@@ -129,13 +135,26 @@
     }
 
     &__lang {
+        margin-right: 20px;
         color: #777;
         font-family: $sfpro;
-        @include font-size(12px);
         font-weight: normal;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: -0.06px;
+        @include mq($small) {
+            margin-right: 0;
+            @include font-size(12px);
+        }
     }
+
+    &__lang_mob {
+        display: block;
+        @include mq($small) {
+            display: none;
+        }
+    }
+
 
     &__contact {
         margin-left: 16px;
@@ -159,24 +178,34 @@
     // padding-right: 15px;
     // padding-left: 15px;
     height: 100vh;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    background: #f3f4f5;
+    background-color: #fff;
+
+    .nav__lang {
+        margin-left: auto;
+        margin-right: 80px;
+        margin-bottom: -8px;
+    }
+
 
     .nav__trigger {
+        margin-top: -22px;
         margin-left: auto;
         margin-right: 30px;
         // margin-top: 2px;
         // margin-bottom: 6px;
     }
 
-    // .nav__menu-icon {
-    //     display: none;
-    // }
+    .nav__menu-icon {
+        display: none;
+    }
 
-    // .nav__close-icon {
-    //     display: block;
-    // }
+    .nav__close-icon {
+        display: block;
+        width: 40px;
+        height: 20px;
+    }
 
     .nav__list {
         // position: absolute;
@@ -185,6 +214,7 @@
         // left: 40px;
         // margin-left: auto;
         // margin-right: 30px;
+        margin-top: auto;
         width: auto;
         padding: 20px 40px;
         display: flex;
@@ -196,11 +226,24 @@
     .nav__link {
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 25px;
+        line-height: 1.5;
+        letter-spacing: -0.13px;
+        text-align: center;
+        color: #151515;
     }
 
     .nav__controls {
+        margin-top: auto;
         padding-right: 40px;
+        padding-bottom: 40px;
         padding-left: 40px;
-        display: block;
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .nav__contact {
+        margin-left: 0;
+        width: 100%;
     }
 }

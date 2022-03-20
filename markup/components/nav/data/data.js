@@ -3,7 +3,7 @@ nav: {
         {
             title: 'Услуги',
             href: '#services',
-            itemClassMod: ''
+            itemClassMod: 'nav__item_active'
         },
         {
             title: 'Кейсы',

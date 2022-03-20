@@ -1,7 +1,7 @@
 import svg4everybody from 'svg4everybody';
 import LazyLoad from 'vanilla-lazyload';
 // import header from '../../components/header/header';
-import { casesSlider, casesListToggle } from '../../components/cases/cases';
+// import { casesSlider, casesListToggle } from '../../components/cases/cases';
 import Nav from '../../components/nav/nav';
 // import tabs from '../../components/tabs/tabs';
 
@@ -44,21 +44,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     */
 
     const nav = new Nav();
-
-    /*
-       Slider
-    */
-
-    const $casesSlider = document.querySelector('.cases__slider');
-    if ( $casesSlider ) {
-        casesSlider();
-
-        // casesListToggle();
-
-    }
-
-
-
 
 
 });
