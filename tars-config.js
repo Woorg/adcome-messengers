@@ -1,5 +1,16 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+        {
+            "name": "flex-gap-polyfill-postcss7",
+            "options": {
+                "webComponents": true,
+
+
+                // "only": true,
+            }
+
+        }
+    ],
     "svg": {
         "active": true,
         "workflow": "symbols",
