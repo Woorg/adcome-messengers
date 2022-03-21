@@ -151,7 +151,7 @@
 
             @include tr(background-color .3s ease);
 
-            &.products__item_rating_5 {
+            &[data-rating='5'] {
                 .products__specs-rating {
                     span {
                         &:nth-child(n + 1) {
@@ -161,7 +161,7 @@
                 }
             }
 
-            &.products__item_rating_4 {
+            &[data-rating='4'] {
                 .products__specs-rating {
                     span {
                         background-color: #fff;
@@ -173,7 +173,7 @@
                 }
             }
 
-            &.products__item_rating_3 {
+            &[data-rating='3'] {
                 .products__specs-rating {
                     span {
                         background-color: #fff;
@@ -185,7 +185,7 @@
                 }
             }
 
-            &.products__item_rating_2 {
+            &[data-rating='2'] {
                 .products__specs-rating {
                     span {
                         background-color: #fff;
@@ -197,7 +197,7 @@
                 }
             }
 
-            &.products__item_rating_1 {
+            &[data-rating='1'] {
                 .products__specs-rating {
                     span {
                         background-color: #fff;
@@ -232,7 +232,7 @@
 
     }
 
-    &__item_rating_5 {
+    [data-rating='5'] {
         .products__specs-rating {
             span {
                 &:nth-child(n + 1) {
@@ -242,7 +242,7 @@
         }
     }
 
-    &__item_rating_4 {
+    [data-rating='4'] {
         .products__specs-rating {
             span {
                 background-color: #3976f4;
@@ -254,7 +254,7 @@
         }
     }
 
-    &__item_rating_3 {
+    [data-rating='3'] {
         .products__specs-rating {
             span {
                 background-color: #3976f4;
@@ -266,7 +266,7 @@
         }
     }
 
-    &__item_rating_2 {
+    [data-rating='2'] {
         .products__specs-rating {
             span {
                 background-color: #3976f4;
@@ -278,7 +278,7 @@
         }
     }
 
-    &__item_rating_1 {
+    [data-rating='1'] {
         .products__specs-rating {
             span {
                 background-color: #3976f4;

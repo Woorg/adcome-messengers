@@ -4042,39 +4042,39 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-.products__item.products__item_active.products__item_rating_5 .products__specs-rating span:nth-child(n + 1) {
+.products__item.products__item_active[data-rating='5'] .products__specs-rating span:nth-child(n + 1) {
   background-color: #fff;
 }
 
-.products__item.products__item_active.products__item_rating_4 .products__specs-rating span {
+.products__item.products__item_active[data-rating='4'] .products__specs-rating span {
   background-color: #fff;
 }
 
-.products__item.products__item_active.products__item_rating_4 .products__specs-rating span:nth-child(n + 5) {
+.products__item.products__item_active[data-rating='4'] .products__specs-rating span:nth-child(n + 5) {
   background-color: #b1b1b1;
 }
 
-.products__item.products__item_active.products__item_rating_3 .products__specs-rating span {
+.products__item.products__item_active[data-rating='3'] .products__specs-rating span {
   background-color: #fff;
 }
 
-.products__item.products__item_active.products__item_rating_3 .products__specs-rating span:nth-child(n + 4) {
+.products__item.products__item_active[data-rating='3'] .products__specs-rating span:nth-child(n + 4) {
   background-color: #b1b1b1;
 }
 
-.products__item.products__item_active.products__item_rating_2 .products__specs-rating span {
+.products__item.products__item_active[data-rating='2'] .products__specs-rating span {
   background-color: #fff;
 }
 
-.products__item.products__item_active.products__item_rating_2 .products__specs-rating span:nth-child(n + 3) {
+.products__item.products__item_active[data-rating='2'] .products__specs-rating span:nth-child(n + 3) {
   background-color: #b1b1b1;
 }
 
-.products__item.products__item_active.products__item_rating_1 .products__specs-rating span {
+.products__item.products__item_active[data-rating='1'] .products__specs-rating span {
   background-color: #fff;
 }
 
-.products__item.products__item_active.products__item_rating_1 .products__specs-rating span:nth-child(n + 2) {
+.products__item.products__item_active[data-rating='1'] .products__specs-rating span:nth-child(n + 2) {
   background-color: #b1b1b1;
 }
 
@@ -4098,39 +4098,39 @@ a:hover {
   color: #fff;
 }
 
-.products__item_rating_5 .products__specs-rating span:nth-child(n + 1) {
+.products [data-rating='5'] .products__specs-rating span:nth-child(n + 1) {
   background-color: #3976f4;
 }
 
-.products__item_rating_4 .products__specs-rating span {
+.products [data-rating='4'] .products__specs-rating span {
   background-color: #3976f4;
 }
 
-.products__item_rating_4 .products__specs-rating span:nth-child(n + 5) {
+.products [data-rating='4'] .products__specs-rating span:nth-child(n + 5) {
   background-color: #b1b1b1;
 }
 
-.products__item_rating_3 .products__specs-rating span {
+.products [data-rating='3'] .products__specs-rating span {
   background-color: #3976f4;
 }
 
-.products__item_rating_3 .products__specs-rating span:nth-child(n + 4) {
+.products [data-rating='3'] .products__specs-rating span:nth-child(n + 4) {
   background-color: #b1b1b1;
 }
 
-.products__item_rating_2 .products__specs-rating span {
+.products [data-rating='2'] .products__specs-rating span {
   background-color: #3976f4;
 }
 
-.products__item_rating_2 .products__specs-rating span:nth-child(n + 3) {
+.products [data-rating='2'] .products__specs-rating span:nth-child(n + 3) {
   background-color: #b1b1b1;
 }
 
-.products__item_rating_1 .products__specs-rating span {
+.products [data-rating='1'] .products__specs-rating span {
   background-color: #3976f4;
 }
 
-.products__item_rating_1 .products__specs-rating span:nth-child(n + 2) {
+.products [data-rating='1'] .products__specs-rating span:nth-child(n + 2) {
   background-color: #b1b1b1;
 }
 

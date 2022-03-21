@@ -5,7 +5,7 @@ mixin products(data)
 
             ul.products__list
 
-                li.products__item.products__item_active.products__item_rating_5
+                li.products__item.products__item_active(data-rating='5')
                     .products__heading(data-title="Канал комуникации")
                         != pugHelpers.Icon.call(locals, {iconName: 'products-1-icon', className: 'products__item-icon'})
                         .products__item-title Мессенджеры
@@ -31,7 +31,7 @@ mixin products(data)
                             dt.products__specs-term Кликнут (Click Rate)
                             dd.products__specs-desc 50%
 
-                li.products__item.products__item_rating_4
+                li.products__item(data-rating='4')
                     .products__heading(data-title="Канал комуникации")
 
                         != pugHelpers.Icon.call(locals, {iconName: 'products-2-icon', className: 'products__item-icon'})
@@ -60,7 +60,7 @@ mixin products(data)
                             dt.products__specs-term Кликнут (Click Rate)
                             dd.products__specs-desc 10%
 
-                li.products__item.products__item_rating_3
+                li.products__item(data-rating='3')
                     .products__heading(data-title="Канал комуникации")
 
                         != pugHelpers.Icon.call(locals, {iconName: 'products-3-icon', className: 'products__item-icon'})
@@ -88,7 +88,7 @@ mixin products(data)
                             dt.products__specs-term Кликнут (Click Rate)
                             dd.products__specs-desc 1%
 
-                li.products__item.products__item_rating_2
+                li.products__item(data-rating='2')
                     .products__heading(data-title="Канал комуникации")
                         != pugHelpers.Icon.call(locals, {iconName: 'products-4-icon', className: 'products__item-icon'})
                         .products__item-title Email-рассылка
@@ -115,7 +115,7 @@ mixin products(data)
                             dt.products__specs-term Кликнут (Click Rate)
                             dd.products__specs-desc 5%
 
-                li.products__item.products__item_rating_1
+                li.products__item(data-rating='1')
                     .products__heading(data-title="Канал комуникации")
 
                         != pugHelpers.Icon.call(locals, {iconName: 'products-5-icon', className: 'products__item-icon'})
