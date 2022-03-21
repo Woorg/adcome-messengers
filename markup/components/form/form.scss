@@ -58,6 +58,7 @@
         font-family: $montserrat;
         font-size: 12px;
         font-weight: normal;
+        pointer-events: all;
         @include tr(border-bottom .3s ease);
 
         @include placeholder() {

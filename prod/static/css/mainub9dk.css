@@ -3475,12 +3475,6 @@ a:hover {
   }
 }
 
-@media (min-width: 960px) {
-  .request_second .request__entry {
-    padding-right: 200px;
-  }
-}
-
 .request_second .request__title {
   margin-bottom: 16px;
   font-size: 22px;
@@ -5288,6 +5282,7 @@ a:hover {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
+	pointer-events: all;
 	-webkit-transition: border-bottom 0.3s ease;
 	-o-transition: border-bottom 0.3s ease;
 	transition: border-bottom 0.3s ease;
@@ -5707,6 +5702,8 @@ a:hover {
 }
 
 .footer__logo {
+	position: relative;
+	z-index: 1;
 	max-width: 110px;
 	width: 100%;
 	display: -webkit-box;
