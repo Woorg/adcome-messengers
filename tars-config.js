@@ -1,7 +1,7 @@
 module.exports = {
     "postcss": [
         {
-            "name": "flex-gap-polyfill-postcss7",
+            "name": "flex-gap-polyfill",
             "options": {
                 "webComponents": true,
 

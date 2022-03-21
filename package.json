@@ -11,6 +11,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-select": "^1.13.18",
     "postcss-pxtorem": "^6.0.0",
+    "postcss-values-parser": "^6.0.2",
     "rfs": "^9.0.6",
     "svg4everybody": "^2.1.9",
     "swiper": "^7.2.0",
@@ -18,7 +19,7 @@
     "vanilla-lazyload": "^17.5.0"
   },
   "devDependencies": {
-    "flex-gap-polyfill": "^4.1.0",
+    "flex-gap-polyfill": "git+https://github.com/limitlessloop/flex-gap-polyfill.git#postcss7",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
     "postcss": "^8.4.12",
