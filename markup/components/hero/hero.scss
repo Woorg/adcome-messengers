@@ -28,6 +28,7 @@
     &__button {
         position: relative;
         z-index: 1;
+        pointer-events: all;
     }
 
     &__title {

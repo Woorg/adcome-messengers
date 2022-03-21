@@ -124,7 +124,7 @@
         border-radius: 10px;
 
         @include tr(background-color .3s ease);
-
+        pointer-events: all;
         @include mq($small) {
             margin-bottom: 0;
             padding-top: 15px;
@@ -144,8 +144,7 @@
             width: calc(20% - 20px);
         }
 
-        &.products__item_active,
-        &:hover {
+        &.products__item_active {
 
             background-color: #3976f4;
             color: #fff;
@@ -496,7 +495,7 @@
 
     &__button {
         width: 100%;
-
+        pointer-events: all;
         @include mq($small) {
             width: auto;
 

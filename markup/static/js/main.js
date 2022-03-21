@@ -3,6 +3,8 @@ import LazyLoad from 'vanilla-lazyload';
 // import header from '../../components/header/header';
 // import { casesSlider, casesListToggle } from '../../components/cases/cases';
 import Nav from '../../components/nav/nav';
+import productActive from '../../components/products/products';
+
 // import tabs from '../../components/tabs/tabs';
 
 // import {pageWidget} from '../../components/page-widget/page-widget';
@@ -44,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     */
 
     const nav = new Nav();
+
+    // Products active
+
+    productActive();
 
 
 });

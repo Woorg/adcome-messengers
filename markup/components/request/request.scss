@@ -62,7 +62,6 @@
             padding-top: 38px;
             padding-bottom: 38px;
 
-
             @include padding-right(40px);
             @include padding-left(40px);
             flex-direction: column;
@@ -143,6 +142,9 @@
 
         p {
             margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
     }
@@ -186,20 +188,35 @@
 
 .request_second {
     background-color: #f3f9fd;
+    color: #191C1F;
     .request__container {
         padding-top: 34px;
         padding-bottom: 34px;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
         @include mq($small) {
-            flex-wrap: nowrap;
         }
 
         @include mq($medium) {
             padding-top: 100px;
             padding-bottom: 100px;
         }
+    }
+
+    .request__w {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        background: none;
+        @include mq($small) {
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+        }
+
     }
 
     .request__entry,
@@ -220,6 +237,12 @@
         }
     }
 
+
+    .request__form {
+        @include mq($small) {
+
+        }
+    }
 
     .request__title {
         margin-bottom: 16px;
@@ -244,6 +267,7 @@
         font-family: $montserrat;
         font-size: 12px;
         line-height: 1.5;
+        color: #191C1F;
         @include mq($small) {
 
         }

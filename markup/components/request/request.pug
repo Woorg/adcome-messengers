@@ -21,22 +21,24 @@ mixin request(data)
 mixin request-second(data)
     section.request.request_second&attributes(attributes)
         .request__container.container
-            .request__entry
-                h2.request__title.title Начнем?
-                .request__text
-                    p Давайте продумаем систему CRM-маркетинга, с которой вы повысите свою конкурентоспособность.
-                    p Email-коммуникация здесь — важнейшее звено.
+
+            .request__w
+                .request__entry
+                    h2.request__title.title Начнем?
+                    .request__text
+                        p Давайте продумаем систему CRM-маркетинга, с которой вы повысите свою конкурентоспособность.
+                        p Email-коммуникация здесь — важнейшее звено.
 
 
-            form.request__form.form
-                .form__row
-                    .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Имя")
-                    .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Телефон")
+                form.request__form.form
+                    .form__row
+                        .form__field
+                            input.form__input(type="text" name="" value="" placeholder="Имя")
+                        .form__field
+                            input.form__input(type="text" name="" value="" placeholder="Телефон")
 
 
-                .form__bottom
-                    input.form__submit.button(type="submit" value="Обсудить проект")
+                    .form__bottom
+                        input.form__submit.button(type="submit" value="Обсудить проект")
 
-                    .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
+                        .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
