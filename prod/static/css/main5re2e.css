@@ -4404,29 +4404,17 @@ a:hover {
 	/* added by fgp */
 	--parent-has-fgp: !important;
 	pointer-events: var(--parent-has-fgp) auto;
-	--fgp-parent-gap-row: 3px;
-	--fgp-margin-top: var(--parent-has-fgp) calc(var(--fgp-gap-row) + var(--orig-margin-top, 0px));
-	margin-top: var(--fgp-margin-top);
-	--fgp-parent-gap-column: 3px;
-	--fgp-margin-left: var(--parent-has-fgp) calc(var(--fgp-gap-column) + var(--orig-margin-left, 0px));
-	margin-left: var(--fgp-margin-left);
 }
 
 .products__specs-rating > * > * {
 	/* added by fgp */
 	--parent-has-fgp: initial;
-	--fgp-parent-gap-row: initial;
-	--fgp-parent-gap-column: initial;
 }
 
 .products__specs-rating {
 	/* added by fgp */
 	--has-fgp: ;
 	pointer-events: var(--has-fgp) none;
-	--fgp-gap-row: 3px;
-	--fgp-margin-top: var(--has-fgp) calc(var(--fgp-parent-gap-row, 0px) / (1 + var(--fgp--parent-gap-as-decimal, 0)) - var(--fgp-gap-row) + var(--orig-margin-top, 0px)) !important;
-	--fgp-gap-column: 3px;
-	--fgp-margin-left: var(--has-fgp) calc(var(--fgp-parent-gap-column, 0px) / (1 + var(--fgp--parent-gap-as-decimal, 0)) - var(--fgp-gap-column) + var(--orig-margin-left, 0px)) !important;
 }
 
 .products__specs-rating {
@@ -4441,17 +4429,18 @@ a:hover {
 	        justify-content: flex-start;
 	min-width: 80px;
 	height: 5px;
-	--fgp-gap: var(--has-fgp, 3px);
-	gap: var(--fgp-gap, 0px);
-	margin-top: var(--fgp-margin-top, var(--orig-margin-top));
-	margin-left: var(--fgp-margin-left, var(--orig-margin-left));
 }
 
 .products__specs-line {
+  margin-right: 3px;
   width: 18%;
   height: 5px;
   border-radius: 25px;
   background-color: #b1b1b1;
+}
+
+.products__specs-line:last-child {
+  margin-right: 0;
 }
 
 .products__specs-desc > *,
