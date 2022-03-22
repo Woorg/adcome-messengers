@@ -3566,6 +3566,7 @@ a:hover {
   .know__container {
     padding-top: 75px;
     padding-bottom: 150px;
+    padding-bottom: 75px;
   }
 }
 
@@ -3684,6 +3685,12 @@ a:hover {
 @media (min-width: 640px) {
   .know__icon {
     margin-bottom: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .know__icon {
+    min-height: 120px;
   }
 }
 

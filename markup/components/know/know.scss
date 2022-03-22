@@ -37,6 +37,8 @@
         @include mq($medium) {
             padding-top: 75px;
             padding-bottom: 150px;
+            padding-bottom: 75px;
+
         }
 
     }
@@ -98,6 +100,7 @@
         }
 
         @include mq($medium) {
+            min-height: 120px;
         }
     }
 
