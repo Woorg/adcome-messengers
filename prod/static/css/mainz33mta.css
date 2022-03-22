@@ -3796,6 +3796,7 @@ a:hover {
 @media (min-width: 960px) {
   .products__container {
     padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
   }
 }
