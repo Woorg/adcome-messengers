@@ -24,6 +24,7 @@
     }
 
     &__field {
+        position: relative;
         margin-bottom: 32px;
         padding-left: 0;
         width: 100%;
@@ -45,6 +46,17 @@
             margin-right: 0;
             margin-bottom: 0;
         }
+
+        .just-validate-error-label {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            font-size: 12px;
+            @include mq($medium) {
+                font-size: 13px;
+
+            }
+        }
     }
 
     &__input {
@@ -59,10 +71,13 @@
         font-size: 12px;
         font-weight: normal;
         pointer-events: all;
+        caret-color: currentColor;
         @include tr(border-bottom .3s ease);
 
         @include placeholder() {
             color: #191c1f;
+            caret-color: currentColor;
+
         }
 
         @include mq($small) {
@@ -81,6 +96,16 @@
             border-bottom: 1px solid #3976f4;
             @include tr(border-bottom .3s ease);
         }
+
+        &.just-validate-error-field {
+            border-bottom: 1px solid red;
+
+            @include placeholder() {
+                color: red;
+            }
+
+        }
+
     }
 
 
@@ -132,6 +157,20 @@
         @include mq($medium) {
             margin-left: 34px;
             font-size: 12px;
+
+        }
+
+    }
+
+    &__send-message {
+        margin-top: 20px;
+        color: #191c1f;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5;
+
+        @include mq($medium) {
+            font-size: 14px;
 
         }
 

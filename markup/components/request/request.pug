@@ -6,7 +6,29 @@ mixin request(data)
                     h2.request__title.title.title_reg Свяжитесь с нами и обсудите проект
                     .request__text Проконсультируем по всем вопросам
 
-                a.request__button.button.button_filled_white(href="#") Обсудить проект
+                a.request__button.button.button_filled_white(href="#request") Обсудить проект
+
+                != pugHelpers.Icon.call(locals, {iconName: 'request-icon', className: 'request__icon'})
+
+                picture.request__image
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-image@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-image@2x.png")
+                    img.lazy.lazy(width="380" height="294" src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-image@2x.png")
+
+        != pugHelpers.Icon.call(locals, {iconName: 'request-bg', className: 'request__bg'})
+
+mixin request-en(data)
+    .request
+        .request__container.container
+            .request__w
+                .request__entry
+                    h2.request__title.title.title_reg Contact us and discuss the project
+
+                    .request__text We will advise on all issues
+
+
+                a.request__button.button.button_filled_white(href="#request") Discuss the project
+
 
                 != pugHelpers.Icon.call(locals, {iconName: 'request-icon', className: 'request__icon'})
 
@@ -19,7 +41,7 @@ mixin request(data)
 
 
 mixin request-second(data)
-    section.request.request_second&attributes(attributes)
+    section.request.request_second&attributes(attributes)#request
         .request__container.container
 
             .request__w
@@ -30,15 +52,41 @@ mixin request-second(data)
                         p Email-коммуникация здесь — важнейшее звено.
 
 
-                form.request__form.form
+                form.request__form.form.form_ru
                     .form__row
                         .form__field
-                            input.form__input(type="text" name="" value="" placeholder="Имя")
+                            input.form__input(type="text" name="Имя" value="" placeholder="Имя")
                         .form__field
-                            input.form__input(type="text" name="" value="" placeholder="Телефон")
+                            input.form__input.form__input_phone(type="text" name="Телефон" value="" placeholder="Телефон")
 
 
                     .form__bottom
-                        input.form__submit.button(type="submit" value="Обсудить проект")
+                        input.form__submit.button(type="submit" value="Обсудить проект" required)
 
                         .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
+
+
+mixin request-second-en(data)
+    section.request.request_second&attributes(attributes)#request
+        .request__container.container
+
+            .request__w
+                .request__entry
+                    h2.request__title.title Shall we begin?
+                    .request__text
+                        p Let's think through a CRM marketing system with which you improve your competitiveness.
+                        p Email communication is the most important link here.
+
+
+                form.request__form.form.form_en
+                    .form__row
+                        .form__field
+                            input.form__input(type="text" name="Name" value="" placeholder="Name")
+                        .form__field
+                            input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone" required)
+
+
+                    .form__bottom
+                        input.form__submit.button(type="submit" value="Discuss the project")
+
+                        .form__note By clicking the "discuss project" button, you agree to the personal data processing policy.

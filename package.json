@@ -16,7 +16,9 @@
     "svg4everybody": "^2.1.9",
     "swiper": "^7.2.0",
     "tabbyjs": "^12.0.3",
-    "vanilla-lazyload": "^17.5.0"
+    "vanilla-lazyload": "^17.5.0",
+    "inputmask": "^5.0.7",
+    "just-validate": "^3.3.3"
   },
   "devDependencies": {
     "flex-gap-polyfill": "git+https://github.com/limitlessloop/flex-gap-polyfill.git#postcss7",

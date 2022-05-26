@@ -4,6 +4,8 @@ class Nav {
         // this.$navWrap = document.querySelector('.header__nav-w');
         this.$navTrigger = document.querySelector('.nav__trigger');
         this.$nav = document.querySelector('.nav_primary');
+        this.$navContacts = document.querySelector('.nav_primary .nav__contact');
+
         this.$page = document.querySelector('.page');
         this.events();
         this.navOpen = false;
@@ -21,6 +23,17 @@ class Nav {
             }
 
         });
+
+        this.$navContacts.addEventListener( 'click', (e) => {
+
+            if ( this.navOpen ) {
+                this.closeNav();
+            } else {
+                this.openNav();
+            }
+
+        });
+
 
         window.addEventListener( 'resize', (e) => {
             this.resizeNav();
@@ -47,11 +60,16 @@ class Nav {
     }
 
     resizeNav() {
-        if ( $(window).width() > '960' ) {
+        let viewportWidth = window.innerWidth;
+        console.log(viewportWidth);
+
+        if ( viewportWidth > '639' ) {
+
             this.$nav.classList.remove('nav_open');
             this.$page.classList.remove('page_nav_open');
         }
     }
+
     // methods
 }
 

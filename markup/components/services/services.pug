@@ -62,3 +62,70 @@ mixin services(data)
         |<svg class="services__bg "  width="283" height="683" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M312.762 34c21.236 59.557 67.085 232.995-.002 259.947-88.377 35.505-39.081-88.871-162.506-45.819-110.266 38.462-122.75 198.695-47.567 252.919 95.63 68.972 221.358 45.567 269.69-38.146 40.725-70.539 158.158-86.512 124.849.2-13 33.842-6.338 86.337-25.179 118.972" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path opacity=".3" d="M397.242 129.303c-4.545 56.391-38.139 189.938-92.435 202.249-67.869 15.388-107.386-54.862-148.449-30.977-41.063 23.886-52.89 129.335 11.825 166.698 50.58 29.202 104.28 26.344 152.448-15.9 44.966-39.437 73.085-121.542 124.647-110.31 30.078 6.551 52.204 34.264 63.866 61.303" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><ellipse opacity=".3" cx="232.809" cy="406.477" rx="61.433" ry="41.573" transform="rotate(30 232.809 406.477)" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="260.671" cy="398.672" r="39.214" transform="rotate(21.026 260.671 398.672)" fill="#039BE5"/><path d="m253.183 400.626-4.063 8.678c.907.349 1.45.11 2.101-.177l5.818-2.43 6.334 9.845c1.271 1.523 2.593 1.486 3.765-.26l16.21-24.892.002-.001c1.432-2.194.414-3.658-1.387-3.677l-39.022-.052c-2.667.009-3.13 1.316-1.463 2.63l7.656 6.048 25.059-4.875c1.193-.264 1.923.416.97.772l-21.98 8.391Z" fill="#fff"/></svg>
 
         |<svg class="services__bg services__bg_tablet" width="146" height="337" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="93.033" cy="119.033" r="19.372" transform="rotate(21.026 93.033 119.033)" fill="#039BE5"/><g clip-path="url(#a)"><path d="m89.334 119.998-2.008 4.287c.448.172.716.054 1.038-.087l2.874-1.201 3.13 4.864c.627.752 1.28.734 1.859-.129l8.008-12.297.001-.001c.707-1.083.205-1.806-.685-1.816l-19.277-.026c-1.318.005-1.546.651-.723 1.3l3.782 2.987 12.38-2.408c.589-.13.949.206.479.382l-10.858 4.145Z" fill="#fff"/></g><path opacity=".3" d="M154.506 16.38c10.491 29.422 33.14 115.103-.001 128.417-43.659 17.54-19.306-43.903-80.28-22.635-54.472 19.001-60.64 98.157-23.498 124.945 47.242 34.072 109.353 22.51 133.229-18.845 20.119-34.847 78.132-42.738 61.677.099-6.422 16.718-3.131 42.651-12.439 58.773" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path opacity=".3" d="M196.24 63.461c-2.246 27.858-18.841 93.831-45.664 99.913-33.528 7.602-53.05-27.102-73.335-15.302-20.286 11.799-26.128 63.892 5.841 82.35 24.987 14.426 51.516 13.014 75.311-7.855 22.214-19.482 36.105-60.043 61.577-54.494 14.859 3.236 25.79 16.927 31.55 30.284" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><ellipse opacity=".3" cx="115.008" cy="200.388" rx="30.348" ry="20.538" transform="rotate(30 115.008 200.388)" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><clipPath id="a"><path fill="#fff" transform="rotate(21.026 -240.075 285.649)" d="M0 0h20.294v20.294H0z"/></clipPath></defs></svg>
+
+
+mixin services-en(data)
+    section.services
+        .services__container.container
+            h2.services__title.title.title_reg We <span>provide</span> <br/>full range of services
+
+            ul.services__list
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-1-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-1-icon@2x.png")
+                        img.lazy.lazy(width="139" height="139" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-1-icon@2x.png")
+
+                    .services__service-title Platform selection
+                    .services__service-text Choosing a platform for working with <br/>messengers and setting it up
+
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-2-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-2-icon@2x.png")
+                        img.lazy.lazy(width="137" height="137" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-2-icon@2x.png")
+
+                    .services__service-title Development and programming
+                    .services__service-text Script development <br/>and chatbot programming
+
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-3-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-3-icon@2x.png")
+                        img.lazy.lazy(width="160" height="128" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-3-icon@2x.png")
+
+                    .services__service-title Settings
+                    .services__service-text Setting up automatic <br/>communications
+
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-4-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-4-icon@2x.png")
+                        img.lazy.lazy(width="127" height="127" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-4-icon@2x.png")
+
+                    .services__service-title Content planning
+                    .services__service-text Convenient for <br/>content planning
+
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-5-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-5-icon@2x.png")
+                        img.lazy.lazy(width="128" height="128" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-5-icon@2x.png")
+
+                    .services__service-title Implementation of marketing mechanics
+
+                    .services__service-text Implementation of marketing mechanics <br/>attracting subscribers and sales
+
+                li.services__service
+                    picture.services__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-6-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-6-icon@2x.png")
+                        img.lazy.lazy(width="130" height="130" src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/service-6-icon@2x.png")
+
+                    .services__service-title Analytical reporting
+                    .services__service-text Conducting analytics <br/>and compiling a report
+
+
+        |<svg class="services__bg "  width="283" height="683" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M312.762 34c21.236 59.557 67.085 232.995-.002 259.947-88.377 35.505-39.081-88.871-162.506-45.819-110.266 38.462-122.75 198.695-47.567 252.919 95.63 68.972 221.358 45.567 269.69-38.146 40.725-70.539 158.158-86.512 124.849.2-13 33.842-6.338 86.337-25.179 118.972" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path opacity=".3" d="M397.242 129.303c-4.545 56.391-38.139 189.938-92.435 202.249-67.869 15.388-107.386-54.862-148.449-30.977-41.063 23.886-52.89 129.335 11.825 166.698 50.58 29.202 104.28 26.344 152.448-15.9 44.966-39.437 73.085-121.542 124.647-110.31 30.078 6.551 52.204 34.264 63.866 61.303" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><ellipse opacity=".3" cx="232.809" cy="406.477" rx="61.433" ry="41.573" transform="rotate(30 232.809 406.477)" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="260.671" cy="398.672" r="39.214" transform="rotate(21.026 260.671 398.672)" fill="#039BE5"/><path d="m253.183 400.626-4.063 8.678c.907.349 1.45.11 2.101-.177l5.818-2.43 6.334 9.845c1.271 1.523 2.593 1.486 3.765-.26l16.21-24.892.002-.001c1.432-2.194.414-3.658-1.387-3.677l-39.022-.052c-2.667.009-3.13 1.316-1.463 2.63l7.656 6.048 25.059-4.875c1.193-.264 1.923.416.97.772l-21.98 8.391Z" fill="#fff"/></svg>
+
+        |<svg class="services__bg services__bg_tablet" width="146" height="337" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="93.033" cy="119.033" r="19.372" transform="rotate(21.026 93.033 119.033)" fill="#039BE5"/><g clip-path="url(#a)"><path d="m89.334 119.998-2.008 4.287c.448.172.716.054 1.038-.087l2.874-1.201 3.13 4.864c.627.752 1.28.734 1.859-.129l8.008-12.297.001-.001c.707-1.083.205-1.806-.685-1.816l-19.277-.026c-1.318.005-1.546.651-.723 1.3l3.782 2.987 12.38-2.408c.589-.13.949.206.479.382l-10.858 4.145Z" fill="#fff"/></g><path opacity=".3" d="M154.506 16.38c10.491 29.422 33.14 115.103-.001 128.417-43.659 17.54-19.306-43.903-80.28-22.635-54.472 19.001-60.64 98.157-23.498 124.945 47.242 34.072 109.353 22.51 133.229-18.845 20.119-34.847 78.132-42.738 61.677.099-6.422 16.718-3.131 42.651-12.439 58.773" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path opacity=".3" d="M196.24 63.461c-2.246 27.858-18.841 93.831-45.664 99.913-33.528 7.602-53.05-27.102-73.335-15.302-20.286 11.799-26.128 63.892 5.841 82.35 24.987 14.426 51.516 13.014 75.311-7.855 22.214-19.482 36.105-60.043 61.577-54.494 14.859 3.236 25.79 16.927 31.55 30.284" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><ellipse opacity=".3" cx="115.008" cy="200.388" rx="30.348" ry="20.538" transform="rotate(30 115.008 200.388)" stroke="#3976F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><clipPath id="a"><path fill="#fff" transform="rotate(21.026 -240.075 285.649)" d="M0 0h20.294v20.294H0z"/></clipPath></defs></svg>

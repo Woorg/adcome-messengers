@@ -1,0 +1,42 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+
+    include ../components/header/header.pug
+    include ../components/nav/nav.pug
+    include ../components/hero/hero.pug
+    include ../components/services/services.pug
+    include ../components/request/request.pug
+    include ../components/know/know.pug
+    include ../components/products/products.pug
+    include ../components/how/how.pug
+    include ../components/trust/trust.pug
+    include ../components/features/features.pug
+    include ../components/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+
+        .page__wrapper
+            +header-en()
+            main.page__main
+                +hero-en()
+                //- +steps()
+                +services-en()
+                +request-en()
+                +know-en()
+                +products-en()
+                +how-en()
+                +trust-en()
+                +features-en()
+                //- +cases()
+                +request-second-en()
+
+            +footer-en().page__footer
+
+        //- script(src='%=static=%js/separate-js/jquery.min.js' defer)
+        //- script(src='%=static=%js/separate-js/bootstrap.bundle.min.js' defer)
+        script(src='%=static=%js/main%=hash=%%=min=%.js' defer)

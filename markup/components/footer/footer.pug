@@ -31,12 +31,12 @@ mixin footer(data)
                 .footer__copyright(href="#") © 2022
 
 
-mixin footer-eng(data)
+mixin footer-en(data)
     footer.footer&attributes(attributes)
         .footer__container.container
             //- .footer__side
             a.footer__logo.logo(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
 
             .footer__social.social
                 ul.social__list

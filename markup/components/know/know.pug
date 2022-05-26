@@ -36,3 +36,44 @@ mixin know(data)
 
 
         != pugHelpers.Icon.call(locals, {iconName: 'know-bg', className: 'know__bg'})
+
+
+mixin know-en(data)
+    section.know
+        .know__container.container
+            h2.know__title.title.title_reg Do you know <span>what</span>
+            ul.know__list
+                li.know__item
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-1-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-1-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-1-icon@2x.png" width="103" height="100" )
+
+
+                    .know__item-title The popularity of instant messengers
+                    .know__item-text Messengers are in first place among the most popular smartphone features.
+
+
+                li.know__item
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-2-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-2-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-2-icon@2x.png" width="111" height="109" )
+
+                    .know__item-title Time in social networks
+
+                    .know__item-text According to VTsIOM, more than 25% of Russian citizens spend more than 1-2 hours a day on social networks and instant messengers.
+
+
+                li.know__item
+
+                    picture.know__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/know-3-icon@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/know-3-icon@2x.png")
+                        img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Иконка", data-src="static/img/general/know-3-icon@2x.png" width="117" height="114" )
+
+                    .know__item-title Messengers
+                    .know__item-text According to research by Deloitte, Russians install 3 or more instant messengers on their smartphones
+
+
+        != pugHelpers.Icon.call(locals, {iconName: 'know-bg', className: 'know__bg'})

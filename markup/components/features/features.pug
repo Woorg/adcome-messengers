@@ -19,3 +19,26 @@ mixin features(data)
 
                     .features__item-title Единый чат-центр
                     .features__text Омниканальный чат-центр объеденяет работу со всеми мессенджерами в общей консоли для оператора.
+
+
+mixin features-en(data)
+    section.features
+        .features__container.container
+            ul.features__list
+                li.features__item
+                    picture.features__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/features-1-img@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/features-1-img@2x.png")
+                        img.lazy.lazy(width="509" height="194" src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/features-1-img@2x.png")
+
+                    .features__item-title Cascading mailings
+                    .features__text Allow you to deliver messages to each subsequent messenger after the previous one failed. For example, first try to deliver via Telegram, not delivered in Telegram - try in WhatsApp, etc.
+
+                li.features__item
+                    picture.features__icon
+                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/features-2-img@2x.webp")
+                        source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/features-2-img@2x.png")
+                        img.lazy.lazy(width="228" height="228" src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/features-2-img@2x.png")
+
+                    .features__item-title Unified Chat Center
+                    .features__text The Omnichannel Chat Center combines all messengers in a single operator console.

@@ -2,54 +2,54 @@ nav: {
     primaryListRu: [
         {
             title: 'Услуги',
-            href: '#services',
+            href: 'https://adcome.ru/services/',
             itemClassMod: 'nav__item_active'
         },
         {
             title: 'Кейсы',
-            href: '#cases',
+            href: 'https://adcome.ru/cases/',
             itemClassMod: '',
         },
         {
             title: 'О нас',
-            href: '#about',
+            href: 'https://adcome.ru/about/',
             itemClassMod: '',
         },
         {
             title: 'Вакансии',
-            href: '#jobs',
+            href: 'https://adcome.ru/job/',
             itemClassMod: '',
         },
         {
             title: 'Блог',
-            href: '#blog',
+            href: 'https://adcome.ru/blog/',
             itemClassMod: ''
         },
     ],
     primaryListEn: [
         {
             title: 'Services',
-            href: '#services',
+            href: 'https://adcome.ru/services/',
             itemClassMod: ''
         },
         {
             title: 'Cases',
-            href: '#cases',
+            href: 'https://adcome.ru/cases/',
             itemClassMod: '',
         },
         {
             title: 'About Us',
-            href: '#about',
+            href: 'https://adcome.ru/about/',
             itemClassMod: '',
         },
         {
             title: 'Vacancies',
-            href: '#jobs',
+            href: 'https://adcome.ru/job/',
             itemClassMod: '',
         },
         {
             title: 'Blog',
-            href: '#blog',
+            href: 'https://adcome.ru/blog/',
             itemClassMod: ''
         },
 
